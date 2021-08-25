@@ -1,0 +1,79 @@
+:root{
+    --dark-purple: #290849;
+    --yellow: #FBA603;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    background: var(--dark-purple);
+}
+#searchButton{
+    cursor: pointer;
+}
+
+.ads-container{
+    height: 150px;
+    border-radius: 20px;
+    background: var(--yellow);
+}
+
+.categories{
+    border-radius: 20px !important;
+    width: 90%;    
+    
+}
+
+.line-break{
+    height: 250px;
+    width: 3px;
+    background: var(--dark-purple);
+    margin-left: 2rem;
+}
+.categories li{
+    transition: .4s;
+    cursor: pointer;
+}
+.categories li:hover{
+    transform: scale(1.1);
+    background: var(--yellow);
+    color: white;
+}
+.categories li.on{
+    background: var(--yellow);
+    color: white; 
+}
+
+.carousel-card{
+    min-height: 20rem;
+    width: 100%;
+    position: relative;
+}
+.carousel-card .background{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+}
+.carousel-card .content{
+    z-index: 2;
+}
+
+.carousel-card .img-wrapper{
+    border-radius: 20px;
+    background: white;
+}
+
+.price h4{
+    color: var(--yellow);
+    font-size: 2.5rem;
+}
+
+.price{
+    border-left: 3px solid var(--dark-purple);
+}
